@@ -15,9 +15,9 @@ app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/YOUR_DB_NAME', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    socketTimeoutMS: 600000,
-    keepAlive: true,
-    reconnectTries: 1000,
+    // socketTimeoutMS: 600000,
+    // keepAlive: true,
+    // reconnectTries: 1000,
   
   },)
   .then(() => {
